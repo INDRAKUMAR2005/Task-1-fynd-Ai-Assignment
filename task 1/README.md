@@ -1,25 +1,28 @@
-Yelp Rating Prediction via Prompting (Task 1)
+# Yelp Rating Prediction via Prompting (Task 1)
 
-This project implements prompt-based rating prediction for Yelp reviews using Google’s Gemini LLM.
-The objective is to classify reviews into 1–5 star ratings and analyze how different prompting strategies impact model performance.
+This project implements **prompt-based rating prediction** for Yelp reviews using **Google’s Gemini LLM**.  
+The objective is to classify reviews into **1–5 star ratings** and analyze how different **prompting strategies** impact model performance.
 
-This work is submitted as Task 1 for the Fynd AI Intern – Take Home Assessment 2.0.
+This work is submitted as **Task 1** for the **Fynd AI Intern – Take Home Assessment 2.0**.
 
-Overview
+---
 
-We design and evaluate three prompting approaches for structured sentiment classification:
+## Overview
 
-Zero-shot Prompting
-Directly asks the model to predict a star rating without examples.
+We design and evaluate **three prompting approaches** for structured sentiment classification:
 
-Few-shot Prompting
-Provides representative examples for selected star ratings to guide the model.
+1. **Zero-shot Prompting**  
+   Directly asks the model to predict a star rating without examples.
 
-Role-based Prompting
-Instructs the model to act as a food critic and reason about sentiment before classifying.
+2. **Few-shot Prompting**  
+   Provides representative examples for selected star ratings to guide the model.
 
-Each approach returns a strict JSON response in the following format:
+3. **Role-based Prompting**  
+   Instructs the model to act as a food critic and reason about sentiment before classifying.
 
+Each approach returns a **strict JSON response** in the following format:
+
+json
 {
   "predicted_stars": 4,
   "explanation": "Brief reasoning for the assigned rating."
@@ -133,3 +136,4 @@ Author
 
 Indra Kumar
 Fynd AI Intern – Take Home Assessment 2.0
+
