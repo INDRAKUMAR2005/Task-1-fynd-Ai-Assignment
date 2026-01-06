@@ -7,8 +7,7 @@ import os
 from tqdm import tqdm
 from sklearn.metrics import accuracy_score, mean_squared_error
 
-# Configuration
-API_KEY = "AIzaSyCX3jp99dBSNKge8pk1Fh62CltS0rSiKr8" # Provided by user
+API_KEY = "AIzaSyCX3jp99dBSNKge8pk1Fh62CltS0rSiKr8"
 DATASET_PATH = "dataset/yelp.csv"
 SAMPLE_SIZE = 5
 SEED = 42
@@ -19,7 +18,6 @@ def load_data():
     """Loads and samples the dataset."""
     try:
         df = pd.read_csv(DATASET_PATH)
-        # Handle potential bad lines or mixed types if necessary, though basic read usually works
         df_sample = df.sample(n=SAMPLE_SIZE, random_state=SEED).copy()
         return df_sample
     except Exception as e:
@@ -28,8 +26,6 @@ def load_data():
 
 def get_model():
     """Returns the Gemini model instance."""
-    # Using gemini-1.5-flash for speed and efficiency as per standard practice, or pro if needed.
-    # User's key works for standard Gemini models.
     return genai.GenerativeModel("models/gemini-flash-latest")
 
 # --- PROMPT DEFINITIONS ---
@@ -213,3 +209,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
