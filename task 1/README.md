@@ -37,19 +37,6 @@ Location: dataset/yelp.csv
 Due to Gemini free-tier API rate limits, a small sampled subset of the dataset is used for evaluation.
 While the task recommends ~200 samples, this experiment focuses on relative prompt comparison rather than absolute accuracy.
 
-⚠️ This limitation and its impact on evaluation are discussed in detail in report.md.
-
-Project Structure
-task1/
-├── dataset/
-│   └── yelp.csv
-├── README.md
-├── classify_reviews.py
-├── list_models.py
-├── evaluation_metrics.csv
-├── evaluation_results_detailed.csv
-└── report.md
-
 Prerequisites
 
 Python 3.9+
@@ -136,4 +123,5 @@ Author
 
 Indra Kumar
 Fynd AI Intern – Take Home Assessment 2.0
+
 
