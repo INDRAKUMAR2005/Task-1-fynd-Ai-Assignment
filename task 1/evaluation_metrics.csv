@@ -1,0 +1,4 @@
+Strategy,Accuracy,JSON_Validity,Valid_Samples
+v1_zeroshot,0.6,1.0,5
+v2_fewshot,0.75,0.8,4
+v3_roleplay,0.0,0.0,0
